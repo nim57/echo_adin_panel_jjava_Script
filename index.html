@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+             <!-- Logo -->
+            <div class="top">                                                                                                                                                                                                 
+                <div class="logo">
+                    <img src="./images/logo.png">
+                    <h1>Ec<span class="danger">ho</span></h1>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+            <!-- sidebar -->
+            <div class="sidebar">
+                <a href="#" class="active" id="dashboardBtn">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#" id="manage_post_Btn">
+                    <span class="material-icons-sharp">post_add</span>
+                    <h3>Manage Post</h3>
+                </a>
+                <a href="#"id="Add_category">
+                    <span class="material-icons-sharp" >category</span>
+                    <h3>Add Category</h3>
+                </a>
+                <a href="#"id="Add_Item">
+                    <span class="material-icons-sharp">category</span>
+                    <h3>Add Item</h3>
+                </a>
+                <a href="#"id="Manage_category">
+                    <span class="material-icons-sharp">category</span>
+                    <h3>Manage Category</h3>
+                </a>
+                <a href="#" id="Manage_item">
+                    <span class="material-icons-sharp">category</span>
+                    <h3>Manage Item</h3>
+                </a>
+                <a href="#"id="Manage_user_account">
+                    <span class="material-icons-sharp">manage_accounts</span>
+                    <h3>User Accounts</h3>
+                </a>
+                <a href="#"id="Manage_admin_account">
+                    <span class="material-icons-sharp">manage_accounts</span>
+                    <h3>Admin Accounts</h3>
+                </a>
+                <a href="#"id="Dashboard2">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+
+                <a href="#"id="Logout">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+
+        <!-- End of asid -->
+          <!-- dash Board -->
+        <main id="main-content">
+            <h1>Dashoard</h1>
+
+             <!-- date -->
+            <div class="date">
+                <input type="date">
+            </div>
+              <!-- Total users -->
+            <div class="insights">
+                <div class="Users">
+                    <span class="material-icons-sharp">group</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Sales</h3>
+                            <h1>$25,024</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                
+                  <!-- Total Post -->
+                <div class="post">
+                    <span class="material-icons-sharp">group</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Sales</h3>
+                            <h1>$25,024</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+
+             <!-- Total aaaaa -->
+                <div class="Users">
+                    <span class="material-icons-sharp">group</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Sales</h3>
+                            <h1>$25,024</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+              </main>
+              <!-- End OF Main -->
+                 <!-- Admin info -->
+             <div class="right">
+                <div class="top">
+                    <button id="menu-btn">
+                        <span class="material-icons-sharp">menu</span>
+                    </button>
+                    <div class="them-toggler">
+                        <span class="material-icons-sharp active">light_mode</span>
+                        <span class="material-icons-sharp">dark_mode</span>
+                    </div>
+                    <div class="profile">
+                        <div class="info">
+                            <p>Hey, <b>Nimesh</b></p>
+                            <small class="text-muted">Admin</small>
+                        </div>
+                        <div class="profile-photo">
+                            <img src="./images/profile-1.jpg">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End of top -->
+
+             </div>
+        </div>
+        <script src="./index.js"></script>
+    </body>
+</html>

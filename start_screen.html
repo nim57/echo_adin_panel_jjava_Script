@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      background-color: rgb(15, 14, 14);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .logo {
+      width: 200px;
+      margin-bottom: 20px;
+    }
+
+    .progress-bar {
+      width: 400px;
+      height: 6px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 100px;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0;
+      background-color: rgb(255, 58, 58);
+      transition: width 0.1s;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="./images/logo.png" alt="Logo" class="logo">
+    <div class="progress-bar">
+      <div class="progress-fill"></div>
+    </div>
+  </div>
+
+  <script>
+    let progress = 0;
+    const progressFill = document.querySelector('.progress-fill');
+
+    function updateProgressBar() {
+      if (progress < 100) {
+        progress += 1;
+        progressFill.style.width = progress + '%';
+      } else {
+        clearInterval(interval);
+        window.location.href = 'login_screen.html'; // Redirect to the next page
+      }
+    }
+
+    const interval = setInterval(updateProgressBar, 10); // 10 milliseconds interval
+  </script>
+</body>
+</html>

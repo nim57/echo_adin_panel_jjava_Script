@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="./login.css">
+ 
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <img src="./images/logo.png" alt="Logo" class="logo">
+      <h2>Welcome back,</h2>
+      <p>Discover Limitless Choices and Unmatched Convenience.</p>
+      
+      <form class="login-form" id="loginForm">
+        <div class="input-group">
+          <input type="email" id="email" placeholder="E-Mail" required>
+        </div>
+        <div class="input-group">
+          <input type="password" id="password" placeholder="Password" required>
+          <span class="toggle-password" onclick="togglePassword()">👁️</span>
+        </div>
+        <div class="options">
+          <label><input type="checkbox"> Remember Me</label>
+          <a href="#" class="forgot-password">Forget Password?</a>
+        </div>
+        <button type="submit" class="btn">Sign In</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function togglePassword() {
+      const passwordField = document.getElementById('password');
+      const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+      passwordField.setAttribute('type', type);
+    }
+
+    // Handle form submission and redirect to index.html
+    document.getElementById('loginForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      // Add form submission logic here (e.g., validation, API call, etc.)
+      alert(`Email: ${email}, Password: ${password}`);
+
+      // Redirect to index.html
+      window.location.href = 'index.html';  // Adjust the path if necessary
+    });
+  </script>
+</body>
+</html>
